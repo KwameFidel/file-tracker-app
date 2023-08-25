@@ -26,7 +26,7 @@ export default function Nav() {
               gestureEnabled: true,
               stackAnimation: "fade",
             }}
-            initialRouteName="BookedCard"
+            initialRouteName="SplashScreen"
           >
             <MainNavigator.Screen name="SplashScreen" component={SplashScreen} />
             <MainNavigator.Screen name="Login" component={Login} />
