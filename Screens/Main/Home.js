@@ -169,6 +169,10 @@ const Home = ({ navigation }) => {
               showsHorizontalScrollIndicator={false}
             />
           </Box>
+       
+            <TouchableOpacity onPress={()=>{navigation.navigate('Book')}}  style={{height:40,justifyContent:'center', marginTop:10, backgroundColor:'#05A2D3',padding:3,width:90,borderRadius:7}}><Text textAlign={'center'} fontFamily={'Poppins-Bold'} color={'white'}>Add File</Text></TouchableOpacity>
+
+        
 
           <Box pt={5} flex={1}>
             <FlatList

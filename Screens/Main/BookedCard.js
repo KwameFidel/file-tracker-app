@@ -34,7 +34,7 @@ import {
 import TextInput from "../../components/TextInput";
 import { ShortTextInput, Btn } from "../../components/TextInput";
 
-const BookedCard = (navigation) => {
+const BookedCard = ({navigation}) => {
   const [customer_name, setCustomerName] = useState("");
   const [customer_phone_number, setCustomerPhone] = useState("");
   const [customer_email, setCustomerEmail] = useState("");
@@ -51,7 +51,7 @@ const BookedCard = (navigation) => {
             h={70}
             backgroundColor={"#05A2D3"}
           >
-            <TouchableOpacity onPress={() => navigation.goBack()}>
+            <TouchableOpacity onPress={()=>{navigation.navigate('Book')}}>
               <Ionicons
                 name="md-chevron-back-sharp"
                 size={30}
@@ -73,7 +73,7 @@ const BookedCard = (navigation) => {
               marginTop: 15,
             }}
           >
-            <Heading>Finance and Administration Sub-Committee Meeting</Heading>
+            <Heading>Finance and Administration Sub-Committee </Heading>
 
             <Box flexDirection={"column"}>
               <Box flexDirection={"row"} justifyContent={"space-between"} p={5}>

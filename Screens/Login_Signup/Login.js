@@ -106,6 +106,10 @@ const Login = (params) => {
     setLoading(false);
   };
 
+  const DummyLogin=()=>{
+    navigation.navigate('HomeScreen')
+  }
+
   return (
     <NativeBaseProvider>
       <StatusBar backgroundColor="white" barStyle="dark-content" />
@@ -151,7 +155,7 @@ const Login = (params) => {
             </Text>
           </Pressable>
 
-          <Btn text="Login" onPress={handleLogin} />
+          <Btn text="Login" onPress={DummyLogin} />
           <ActivityIndicator animating={loading} size="large" color="#0000ff" />
 
 

@@ -114,6 +114,9 @@ const SignUp = () => {
     setLoading(false)
   };
 
+  const DummySignUp=()=>{
+    navigation.navigate('HomeScreen')
+  }
   
 
   return (
@@ -122,14 +125,14 @@ const SignUp = () => {
       <Center
         style={{
           flex: 1,
-          paddingTop:5,
+          paddingTop:10,
           backgroundColor: "white",
         }}
       >
         <ScrollView showsVerticalScrollIndicator={false}>
           <Center
             flex={1}
-            p={10}
+          
             justifyContent="center"
             bgColor="white"
             alignItems="center"
@@ -177,7 +180,7 @@ const SignUp = () => {
               placeholder="Confirm password"
             />
 
-            <Btn onPress={Handlesignup} text="Register" />
+            <Btn onPress={DummySignUp} text="Register" />
             <ActivityIndicator animating={loading} size="large" color="#0000ff" />
 
 
